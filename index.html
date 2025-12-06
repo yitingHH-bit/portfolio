@@ -74,7 +74,7 @@
     .subtitle {
       font-size: 15px;
       color: var(--muted);
-      max-width: 720px;
+      max-width: 760px;
       line-height: 1.6;
     }
 
@@ -293,13 +293,15 @@
       <header>
         <div class="badge-row">
           <span class="badge">Robotics & Embedded Systems</span>
+          <span class="badge">C++ / Qt · ROS2 · RL</span>
           <span class="badge">Kuopio · Finland</span>
         </div>
         <h1 class="title">Jiancai Hou — Project Portfolio</h1>
         <p class="subtitle">
-          Selected works across
-          <strong>quadruped RL navigation, care robots, hospital digital twins, IoT sensors, and C++/Qt real-time systems</strong>.
-          This page is a visual index of my ongoing research and past industry projects.
+          Before coming to Finland, I spent several years in Xi’an as a <strong>C++/Qt engineer</strong> on
+          large-scale real-time systems (intelligent security, navigation simulators, radar–vehicle monitoring).
+          In Finland I shifted toward <strong>robotics & embedded systems</strong>: care robots, hospital digital twins,
+          IoT sensors, and reinforcement learning for quadruped and small walking robots.
         </p>
         <div class="links-row">
           <a class="btn primary" href="https://github.com/yitingHH-bit" target="_blank" rel="noreferrer">
@@ -310,41 +312,42 @@
             <span class="icon">💼</span>
             <span>LinkedIn</span>
           </a>
-          <!-- 把你的 PDF 简历传到这个仓库后，把链接改成 raw 文件地址 -->
-          <!-- <a class="btn" href="CV_JiancaiHou.pdf" target="_blank" rel="noreferrer">
+          <!-- 若以后在仓库中上传 PDF 简历，把下面注释取消并改文件名 -->
+          <!--
+          <a class="btn" href="CV_JiancaiHou.pdf" target="_blank" rel="noreferrer">
             <span class="icon">📄</span>
             <span>Download CV</span>
-          </a> -->
+          </a>
+          -->
         </div>
       </header>
 
       <main>
-        <!-- 左侧：重点机器人项目（包含视频） -->
+        <!-- 左侧：机器人 & 课程项目（带视频） -->
         <section>
-          <div class="section-title">Robotics Highlights</div>
+          <div class="section-title">Robotics & Course Projects</div>
 
-          <!-- Go2 RL 项目 -->
+          <!-- 1. Duck robot RL / Open Duck Mini -->
           <article class="card">
             <div class="card-header">
               <div>
-                <h2 class="card-title">Unitree Go2 — Reinforcement Learning Navigation</h2>
+                <h2 class="card-title">AI-Driven Duck Robot — Replica with Reinforcement Learning Gait</h2>
                 <div class="card-tagline">
-                  Dual-pipeline RL (Gazebo TD3 + Isaac Lab PPO), obstacle avoidance, 5G edge offloading
+                  Raspberry Pi Zero 2 W · 14 motors · MuJoCo training & ONNX deployment
                 </div>
                 <div class="pill-row">
-                  <span class="pill">Quadruped Robot</span>
-                  <span class="pill">LiDAR + RL</span>
-                  <span class="pill">Jetson Orin NX</span>
-                  <span class="pill">Isaac Lab / Gazebo</span>
+                  <span class="pill">Biped / Quadruped</span>
+                  <span class="pill">Reinforcement Learning</span>
+                  <span class="pill">ONNX Runtime</span>
+                  <span class="pill">Python + C++</span>
                 </div>
               </div>
             </div>
 
             <div class="video-wrapper">
-              <!-- 用你自己的演示视频，这里先放一个示例 ID -->
               <iframe
                 src="https://www.youtube.com/embed/0WnGxrHee8Y"
-                title="Reinforcement learning navigation for Go2 robot"
+                title="AI-driven Duck robot (replica work)"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
@@ -352,98 +355,181 @@
 
             <div class="card-body">
               <ul>
-                <li>Designed a dual-pipeline RL framework: <strong>CNN-TD3 in Gazebo</strong> and <strong>hierarchical PPO in Isaac Lab</strong>.</li>
-                <li>Focused on <strong>obstacle-avoidance navigation</strong> with LiDAR down-sampling, reward shaping and curriculum.</li>
-                <li>Evaluated different deployment modes: on-robot inference, Ethernet tethering and <strong>5G edge offloading</strong>.</li>
-                <li>Prepared a paper-style abstract and experiments for conference submission.</li>
+                <li>Replica of a research duck robot using a <strong>Raspberry Pi Zero 2 W</strong> and 14 motors.</li>
+                <li>Trained walking gaits in <strong>MuJoCo</strong> and exported policies to <strong>ONNX</strong> for on-board inference.</li>
+                <li>Separated runtime into policy, state estimation and low-level motor drivers for easier experimentation.</li>
               </ul>
             </div>
           </article>
 
-          <!-- Open Duck Mini 项目（占位，无视频也可以） -->
+          <!-- 2. Care robot & navigation internships (one combined video) -->
           <article class="card">
             <div class="card-header">
               <div>
-                <h2 class="card-title">Open Duck Mini — Lightweight Gait Runtime</h2>
+                <h2 class="card-title">Care Robot & Go2 Research — SLAM, Perception & Navigation</h2>
                 <div class="card-tagline">
-                  Raspberry Pi / Pi Zero based mini robot with ONNX gait controller & MuJoCo simulation
+                  Savonia UAS · Thinking Lifeline · University of Turku (Finland)
                 </div>
                 <div class="pill-row">
-                  <span class="pill">Biped / Quadruped</span>
-                  <span class="pill">ONNX Runtime</span>
-                  <span class="pill">MuJoCo</span>
-                  <span class="pill">Python + C++</span>
+                  <span class="pill">Intel RealSense D415</span>
+                  <span class="pill">RPlidar A1</span>
+                  <span class="pill">ORB-SLAM3 / RTAB-Map</span>
+                  <span class="pill">ROS2 Navigation2</span>
+                  <span class="pill">YOLOv8</span>
                 </div>
               </div>
             </div>
+
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/KqNnR1GZ-HE"
+                title="Hospital digital twin & care robot / navigation work"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
             <div class="card-body">
               <ul>
-                <li>Built a small open robot platform with a <strong>lightweight runtime</strong> for walking gaits.</li>
-                <li>Combined <strong>MuJoCo training</strong> and <strong>ONNX deployment</strong> on a Raspberry Pi class computer.</li>
-                <li>Focus on modular design: separate <em>policy, state estimation, low-level motor drivers</em>.</li>
+                <li><strong>Embedded Engineer Intern @ Savonia UAS (Jan–May 2024)</strong> — built a hospital digital-twin simulator combining ESP32/ESP8266 sensors, Azure cloud and Unity3D to visualise patient flow and equipment status.</li>
+                <li><strong>Embedded Software Engineer Intern @ Thinking Lifeline (May–Sep 2024)</strong> — developed a care robot on an iRobot base with RealSense + RPlidar, integrating ORB-SLAM3/RTAB-Map with ROS2 Navigation2 and YOLOv8 for human distance detection and sound-based navigation.</li>
+                <li><strong>Robotics Developer Intern @ University of Turku (May–Aug 2025)</strong> — continued work on autonomous navigation and perception for the Unitree Go2 robot in a research setting, preparing a paper (to be published).</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 3. IoT room monitoring course project -->
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">IoT Room Air Temperature & Humidity Monitor</h2>
+                <div class="card-tagline">
+                  ESP8266 sensors · Cloud DB · Docker · React dashboard
+                </div>
+                <div class="pill-row">
+                  <span class="pill">IoT</span>
+                  <span class="pill">ESP8266</span>
+                  <span class="pill">Docker</span>
+                  <span class="pill">React</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/zslK1JheXxE"
+                title="IoT-based room temperature & humidity monitoring system"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="card-body">
+              <ul>
+                <li>Designed an end-to-end IoT system with <strong>ESP8266 + environmental sensors</strong> sending data to a cloud database.</li>
+                <li>Containerised backend services with <strong>Docker</strong> and visualised data in a <strong>React-based dashboard</strong>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 4. GPS / lidar / odometry robot course project -->
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Custom Mobile Robot with GPS, LiDAR & Odometry Fusion</h2>
+                <div class="card-tagline">
+                  Course project — sensor fusion for outdoor navigation
+                </div>
+                <div class="pill-row">
+                  <span class="pill">GPS</span>
+                  <span class="pill">LiDAR</span>
+                  <span class="pill">Odometry</span>
+                  <span class="pill">Sensor Fusion</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/yrW31CblupQ"
+                title="Customer robot project with GPS, LiDAR and odometry"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="card-body">
+              <ul>
+                <li>Built a practical robot project that integrates <strong>lidar data, wheel odometry and GPS</strong> for navigation.</li>
+                <li>Implemented data fusion and experimented with outdoor motion and localisation.</li>
               </ul>
             </div>
           </article>
         </section>
 
-        <!-- 右侧：其他工程项目 / 工作经历卡片 -->
+        <!-- 右侧：工作经历、证书、活动 -->
         <section>
-          <div class="section-title">Industry & IoT Projects</div>
+          <div class="section-title">Experience</div>
 
-          <div class="proj-grid">
-            <div class="small-card">
-              <h3>Care Robot — Visual SLAM & Navigation</h3>
-              <div class="meta">Thinking Lifeline · 2024 · Finland</div>
-              <p>
-                Used Intel RealSense D415 and ROS2 (ORB-SLAM3 / RTAB-Map / Navigation2) to build
-                indoor mapping, autonomous navigation and visual target detection for a care robot.
-              </p>
-            </div>
-
-            <div class="small-card">
-              <h3>Hospital Digital Twin IoT Platform</h3>
-              <div class="meta">Savonia UAS · 2024 · Finland</div>
-              <p>
-                Collected real-time data from hospital devices via ESP32/ESP8266, pushed to Azure
-                cloud and visualised in interactive Unity 3D scenes; designed queue simulation for patient flow.
-              </p>
-            </div>
-
-            <div class="small-card">
-              <h3>Vehicle & Radar Monitoring Systems</h3>
-              <div class="meta">C++ / Qt · 2017–2022 · China</div>
-              <p>
-                Developed real-time GUIs on Jetson Nano and desktop PCs: vehicle state dashboards,
-                radar-to-Jetson communication protocols, navigation signal simulation and face/vehicle recognition.
-              </p>
-            </div>
-
-            <div class="small-card">
-              <h3>IoT Sensor Dashboards & Apps</h3>
-              <div class="meta">Side Projects</div>
-              <p>
-                Built end-to-end demos with ESP32/ESP8266 + DHT sensors, cloud backends and web / mobile dashboards.
-                Explored Kotlin Android apps, Firebase realtime DB and React-based visualisation.
-              </p>
-            </div>
-          </div>
-
-          <div class="section-title">Education</div>
           <div class="small-card">
-            <h3>Savonia UAS – Internet of Things</h3>
-            <div class="meta">Kuopio, Finland</div>
+            <h3>C++ / Qt Engineer — Xi’an, China</h3>
+            <div class="meta">2017 – 2022 · Intelligent Security · Navigation Simulators · Radar & Traffic</div>
             <p>
-              2.5+ years of study covering signal processing, embedded systems, data science,
-              machine learning and robotics projects, alongside previous C++/Qt industry experience.
+              <strong>(Mar 2017 – Sep 2019)</strong> Worked on a large-scale C++/Qt desktop application for
+              <strong>intelligent security monitoring</strong> (face and vehicle analysis) used by hospitals and other
+              institutions, with deployments in China and Brazil. I focused on the vehicle detection module, which built
+              my first solid understanding of software engineering.
+            </p>
+            <p>
+              <strong>(Sep 2019 – Sep 2020)</strong> At Rayco Electronic Information Technology, maintained several
+              control and display applications that transmitted satellite signals from FPGA-based simulators, stored
+              data in databases and visualised it in real-time diagrams on Windows using C++ for high-performance IO.
+            </p>
+            <p>
+              <strong>(Nov 2020 – Sep 2022)</strong> Developed an <strong>urban road traffic monitoring system</strong>
+              that integrated radar and vehicle traffic data, often on NVIDIA Jetson boards. Worked closely with
+              university professors from Xidian University and Shaanxi University of Science & Technology on algorithms
+              and real-time data streams, which strengthened my collaboration skills.
+            </p>
+            <p class="meta">Demo video:</p>
+            <p>
+              <a href="https://youtu.be/B7Z8EBj9Y_Q" target="_blank" rel="noreferrer">
+                ▶ Urban traffic & radar monitoring system (YouTube)
+              </a>
             </p>
           </div>
 
           <div class="small-card">
-            <h3>Earlier Degree</h3>
-            <div class="meta">Gansu University of Political Science and Law</div>
+            <h3>Robotics & Embedded Internships — Finland</h3>
+            <div class="meta">2024 – 2025 · Savonia UAS · Thinking Lifeline · University of Turku</div>
             <p>
-              Background in journalism and communication, which helps with documentation,
-              teaching materials and cross-cultural teamwork.
+              Moved into robotics and embedded systems through three internships covering <strong>digital twins, care robots
+              and quadruped research</strong>, as summarised in the video on the left. Work involved ESP32/ESP8266 sensors,
+              Azure & Unity3D visualisation, RealSense & RPlidar based navigation, YOLOv8 perception and autonomous Go2 navigation.
+            </p>
+          </div>
+
+          <div class="section-title">Certifications</div>
+          <div class="small-card">
+            <h3>Professional Certificates</h3>
+            <div class="meta">Cloud · DevOps · Project Management</div>
+            <ul style="margin-top:6px; padding-left:18px;">
+              <li>Microsoft Azure AI Essentials Professional Certificate (Microsoft & LinkedIn).</li>
+              <li>Docker Foundations Professional Certificate.</li>
+              <li>Foundation Certificate in Project Management.</li>
+            </ul>
+            <p style="margin-top:8px; font-size:12px; color:var(--muted);">
+              (Certificate images can be added here later once uploaded to this repository.)
+            </p>
+          </div>
+
+          <div class="section-title">Activities</div>
+          <div class="small-card">
+            <h3>Nokia · Elisa · Microsoft Kuopio Student Network Challenge 2024</h3>
+            <div class="meta">Savonia University of Applied Sciences</div>
+            <p>
+              Participated in the Kuopio Student Network Challenge 2024 organised by Nokia, Elisa and Microsoft, gaining
+              experience in industry-oriented teamwork and presenting technical ideas. (Event photo can be added here.)
             </p>
           </div>
         </section>
@@ -451,15 +537,13 @@
 
       <footer>
         <div>© <span id="year"></span> Jiancai Hou · Robotics & Embedded Systems</div>
-        <div>Page hosted on GitHub Pages · Built as a single static HTML file.</div>
+        <div>Hosted on GitHub Pages · Single static HTML file.</div>
       </footer>
     </div>
   </div>
 
   <script>
-    // 自动显示当前年份
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
