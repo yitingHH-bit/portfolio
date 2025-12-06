@@ -312,7 +312,7 @@
             <span class="icon">💼</span>
             <span>LinkedIn</span>
           </a>
-          <!-- 若以后在仓库中上传 PDF 简历，把下面注释取消并改文件名 -->
+          <!-- 以后在仓库中上传 PDF 简历后，可以启用下面按钮 -->
           <!--
           <a class="btn" href="CV_JiancaiHou.pdf" target="_blank" rel="noreferrer">
             <span class="icon">📄</span>
@@ -323,11 +323,48 @@
       </header>
 
       <main>
-        <!-- 左侧：机器人 & 课程项目（带视频） -->
+        <!-- 左侧：机器人 & 课程项目（Go2 第一，Duck 第二） -->
         <section>
           <div class="section-title">Robotics & Course Projects</div>
 
-          <!-- 1. Duck robot RL / Open Duck Mini -->
+          <!-- Go2 RL / paper project -->
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Unitree Go2 — Reinforcement Learning Navigation</h2>
+                <div class="card-tagline">
+                  Dual-pipeline RL (Gazebo TD3 + Isaac Lab PPO), obstacle avoidance & paper work-in-progress
+                </div>
+                <div class="pill-row">
+                  <span class="pill">Unitree Go2</span>
+                  <span class="pill">Reinforcement Learning</span>
+                  <span class="pill">LiDAR Navigation</span>
+                  <span class="pill">Jetson Orin NX</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-wrapper">
+              <!-- 这里用你 Go2 论文展示的视频 ID，现在先用占位符 -->
+              <iframe
+                src="https://www.youtube.com/embed/lvM5r-gL-LQ"
+                title="Reinforcement learning navigation for Unitree Go2"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="card-body">
+              <ul>
+                <li>Built a dual-pipeline RL framework for Go2: <strong>CNN-based TD3 in Gazebo</strong> and <strong>hierarchical PPO in Isaac Lab</strong>.</li>
+                <li>Focused on <strong>obstacle-avoiding navigation</strong> with LiDAR down-sampling, reward shaping and curriculum design.</li>
+                <li>Evaluated deployment options: on-robot inference, Ethernet tethering and <strong>5G edge offloading</strong>.</li>
+                <li>Preparing a research article based on these experiments (video & abstract hosted on a separate project page).</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Duck robot RL -->
           <article class="card">
             <div class="card-header">
               <div>
@@ -362,7 +399,7 @@
             </div>
           </article>
 
-          <!-- 2. Care robot & navigation internships (one combined video) -->
+          <!-- care robot & Go2 research internships -->
           <article class="card">
             <div class="card-header">
               <div>
@@ -398,7 +435,7 @@
             </div>
           </article>
 
-          <!-- 3. IoT room monitoring course project -->
+          <!-- IoT room monitoring -->
           <article class="card">
             <div class="card-header">
               <div>
@@ -432,7 +469,7 @@
             </div>
           </article>
 
-          <!-- 4. GPS / lidar / odometry robot course project -->
+          <!-- GPS / lidar / odometry robot -->
           <article class="card">
             <div class="card-header">
               <div>
@@ -513,14 +550,41 @@
           <div class="small-card">
             <h3>Professional Certificates</h3>
             <div class="meta">Cloud · DevOps · Project Management</div>
-            <ul style="margin-top:6px; padding-left:18px;">
-              <li>Microsoft Azure AI Essentials Professional Certificate (Microsoft & LinkedIn).</li>
-              <li>Docker Foundations Professional Certificate.</li>
-              <li>Foundation Certificate in Project Management.</li>
-            </ul>
-            <p style="margin-top:8px; font-size:12px; color:var(--muted);">
-              (Certificate images can be added here later once uploaded to this repository.)
-            </p>
+
+            <div style="margin-top:10px; display:grid; gap:10px;">
+              <figure style="margin:0;">
+                <img
+                  src="img/cert-docker.png"
+                  alt="Docker Foundations Professional Certificate"
+                  style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
+                />
+                <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
+                  Docker Foundations Professional Certificate (LinkedIn Learning & Docker)
+                </figcaption>
+              </figure>
+
+              <figure style="margin:0;">
+                <img
+                  src="img/cert-azure-ai.png"
+                  alt="Microsoft Azure AI Essentials Professional Certificate"
+                  style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
+                />
+                <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
+                  Microsoft Azure AI Essentials Professional Certificate (Microsoft & LinkedIn)
+                </figcaption>
+              </figure>
+
+              <figure style="margin:0;">
+                <img
+                  src="img/cert-project-management.png"
+                  alt="Foundation Certificate in Project Management"
+                  style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
+                />
+                <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
+                  Foundation Certificate in Project Management (PRY · Finland)
+                </figcaption>
+              </figure>
+            </div>
           </div>
 
           <div class="section-title">Activities</div>
@@ -529,7 +593,7 @@
             <div class="meta">Savonia University of Applied Sciences</div>
             <p>
               Participated in the Kuopio Student Network Challenge 2024 organised by Nokia, Elisa and Microsoft, gaining
-              experience in industry-oriented teamwork and presenting technical ideas. (Event photo can be added here.)
+              experience in industry-oriented teamwork and presenting technical ideas.
             </p>
           </div>
         </section>
