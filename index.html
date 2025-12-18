@@ -18,16 +18,12 @@
       --shadow-soft: 0 18px 60px rgba(15, 23, 42, 0.9);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
       color: var(--text);
       -webkit-font-smoothing: antialiased;
     }
@@ -39,14 +35,9 @@
       justify-content: center;
     }
 
-    .container {
-      width: 100%;
-      max-width: 1080px;
-    }
+    .container { width: 100%; max-width: 1080px; }
 
-    header {
-      margin-bottom: 32px;
-    }
+    header { margin-bottom: 32px; }
 
     .badge-row {
       display: flex;
@@ -78,10 +69,7 @@
       line-height: 1.6;
     }
 
-    .subtitle strong {
-      color: var(--text);
-      font-weight: 600;
-    }
+    .subtitle strong { color: var(--text); font-weight: 600; }
 
     .links-row {
       margin-top: 18px;
@@ -105,9 +93,7 @@
       transition: all 0.18s ease-out;
     }
 
-    .btn span.icon {
-      font-size: 16px;
-    }
+    .btn span.icon { font-size: 16px; }
 
     .btn.primary {
       border-color: var(--accent);
@@ -157,10 +143,7 @@
       margin: 0;
     }
 
-    .card-tagline {
-      font-size: 13px;
-      color: var(--muted);
-    }
+    .card-tagline { font-size: 13px; color: var(--muted); }
 
     .pill-row {
       display: flex;
@@ -191,10 +174,8 @@
 
     .video-wrapper iframe {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       border: 0;
     }
 
@@ -205,21 +186,8 @@
       line-height: 1.7;
     }
 
-    .card-body ul {
-      padding-left: 20px;
-      margin: 8px 0 0;
-    }
-
-    .card-body li + li {
-      margin-top: 4px;
-    }
-
-    .proj-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 18px;
-      margin-top: 10px;
-    }
+    .card-body ul { padding-left: 20px; margin: 8px 0 0; }
+    .card-body li + li { margin-top: 4px; }
 
     .small-card {
       background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.06), #020617);
@@ -228,18 +196,9 @@
       padding: 14px 14px 16px;
     }
 
-    .small-card h3 {
-      font-size: 15px;
-      margin: 0 0 4px;
-      font-weight: 600;
-    }
-
-    .small-card p {
-      font-size: 13px;
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.6;
-    }
+    .small-card h3 { font-size: 15px; margin: 0 0 4px; font-weight: 600; }
+    .small-card p { font-size: 13px; margin: 0; color: var(--muted); line-height: 1.6; }
+    .small-card p + p { margin-top: 10px; }
 
     .small-card .meta {
       margin-top: 6px;
@@ -262,31 +221,18 @@
     }
 
     @media (min-width: 960px) {
-      .page {
-        padding-top: 40px;
-      }
-
-      main {
-        grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.2fr);
-      }
+      .page { padding-top: 40px; }
+      main { grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.2fr); }
     }
 
     @media (max-width: 640px) {
-      header {
-        margin-bottom: 24px;
-      }
-
-      .card {
-        padding: 16px 14px 18px;
-        border-radius: 16px;
-      }
-
-      .video-wrapper {
-        border-radius: 14px;
-      }
+      header { margin-bottom: 24px; }
+      .card { padding: 16px 14px 18px; border-radius: 16px; }
+      .video-wrapper { border-radius: 14px; }
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <div class="container">
@@ -296,13 +242,16 @@
           <span class="badge">C++ / Qt · ROS2 · RL</span>
           <span class="badge">Kuopio · Finland</span>
         </div>
+
         <h1 class="title">Jiancai Hou — Project Portfolio</h1>
+
         <p class="subtitle">
-          Before coming to Finland, I spent several years in Xi’an as a <strong>C++/Qt engineer</strong> on
-          large-scale real-time systems (intelligent security, navigation simulators, radar–vehicle monitoring).
-          In Finland I shifted toward <strong>robotics & embedded systems</strong>: care robots, hospital digital twins,
+          Before coming to Finland, I worked in Xi’an as a <strong>C++/Qt engineer</strong> on large-scale real-time systems
+          (intelligent security, satellite signal applications, radar–vehicle traffic monitoring).
+          In Finland, I shifted toward <strong>robotics & embedded systems</strong>: care robots, hospital digital twins,
           IoT sensors, and reinforcement learning for quadruped and small walking robots.
         </p>
+
         <div class="links-row">
           <a class="btn primary" href="https://github.com/yitingHH-bit" target="_blank" rel="noreferrer">
             <span class="icon">🐙</span>
@@ -312,7 +261,6 @@
             <span class="icon">💼</span>
             <span>LinkedIn</span>
           </a>
-          <!-- 以后在仓库中上传 PDF 简历后，可以启用下面按钮 -->
           <!--
           <a class="btn" href="CV_JiancaiHou.pdf" target="_blank" rel="noreferrer">
             <span class="icon">📄</span>
@@ -323,7 +271,7 @@
       </header>
 
       <main>
-        <!-- 左侧：机器人 & 课程项目（Go2 第一，Duck 第二） -->
+        <!-- LEFT -->
         <section>
           <div class="section-title">Robotics & Course Projects</div>
 
@@ -333,7 +281,7 @@
               <div>
                 <h2 class="card-title">Unitree Go2 — Reinforcement Learning Navigation</h2>
                 <div class="card-tagline">
-                  Dual-pipeline RL (Gazebo TD3 + Isaac Lab PPO), obstacle avoidance & paper work-in-progress
+                  Dual-pipeline RL (Gazebo TD3 + Isaac Lab PPO), obstacle avoidance & manuscript in preparation
                 </div>
                 <div class="pill-row">
                   <span class="pill">Unitree Go2</span>
@@ -345,7 +293,6 @@
             </div>
 
             <div class="video-wrapper">
-              <!-- 这里用你 Go2 论文展示的视频 ID，现在先用占位符 -->
               <iframe
                 src="https://www.youtube.com/embed/KqNnR1GZ-HE"
                 title="Reinforcement learning navigation for Unitree Go2"
@@ -357,9 +304,9 @@
             <div class="card-body">
               <ul>
                 <li>Built a dual-pipeline RL framework for Go2: <strong>CNN-based TD3 in Gazebo</strong> and <strong>hierarchical PPO in Isaac Lab</strong>.</li>
-                <li>Focused on <strong>obstacle-avoiding navigation</strong> with LiDAR down-sampling, reward shaping and curriculum design.</li>
-                <li>Evaluated deployment options: on-robot inference, Ethernet tethering and <strong>5G edge offloading</strong>.</li>
-                <li>Preparing a research article based on these experiments (video & abstract hosted on a separate project page).</li>
+                <li>Focused on <strong>obstacle-avoiding navigation</strong> with LiDAR down-sampling, reward shaping, and curriculum design.</li>
+                <li>Evaluated deployment options: on-robot inference, Ethernet tethering, and <strong>5G edge offloading</strong>.</li>
+                <li>Preparing a research article based on these experiments.</li>
               </ul>
             </div>
           </article>
@@ -368,7 +315,7 @@
           <article class="card">
             <div class="card-header">
               <div>
-                <h2 class="card-title">AI-Driven Duck Robot — Replica with Reinforcement Learning Gait</h2>
+                <h2 class="card-title">Open Duck Mini — RL Gait Runtime (Course Project)</h2>
                 <div class="card-tagline">
                   Raspberry Pi Zero 2 W · 14 motors · MuJoCo training & ONNX deployment
                 </div>
@@ -384,7 +331,7 @@
             <div class="video-wrapper">
               <iframe
                 src="https://www.youtube.com/embed/HA8A6kagsS8"
-                title="AI-driven Duck robot (replica work)"
+                title="Open Duck Mini runtime"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
@@ -392,37 +339,68 @@
 
             <div class="card-body">
               <ul>
-                <li>Replica of a research duck robot using a <strong>Raspberry Pi Zero 2 W</strong> and 14 motors.</li>
+                <li>Built a small open-source walking robot runtime using a <strong>Raspberry Pi Zero 2 W</strong> and 14 motors.</li>
                 <li>Trained walking gaits in <strong>MuJoCo</strong> and exported policies to <strong>ONNX</strong> for on-board inference.</li>
-                <li>Separated runtime into policy, state estimation and low-level motor drivers for easier experimentation.</li>
-                <li>open-resource:https://github.com/yitingHH-bit/Open_Duck_Mini_Runtime/tree/main</li>
+                <li>Separated runtime into policy execution, state estimation, and low-level motor control for easier iteration.</li>
+                <li>
+                  Open-source repo:
+                  <a class="btn" style="display:inline-flex; padding:4px 10px; font-size:12px;"
+                     href="https://github.com/yitingHH-bit/Open_Duck_Mini_Runtime/tree/main" target="_blank" rel="noreferrer">
+                    Open Duck Mini Runtime
+                  </a>
+                </li>
               </ul>
             </div>
           </article>
 
-          <!-- care robot & Go2 research internships -->
+          <!-- Excavator thesis -->
           <article class="card">
             <div class="card-header">
               <div>
-                <h2 class="card-title">Care Robot & Go2 Research — SLAM, Perception & Navigation</h2>
+                <h2 class="card-title">Simulation-Based Development for a Nonlinear Excavator System</h2>
                 <div class="card-tagline">
-                  Savonia UAS · Thinking Lifeline · University of Turku (Finland)
+                  Thesis Project · simulation-first workflow for model-based and learning-based control
                 </div>
                 <div class="pill-row">
-                  <span class="pill">Intel RealSense D415</span>
-                  <span class="pill">RPlidar A1</span>
-                  <span class="pill">ORB-SLAM3 / RTAB-Map</span>
-                  <span class="pill">ROS2 Navigation2</span>
-                  <span class="pill">YOLOv8</span>
+                  <span class="pill">Nonlinear System</span>
+                  <span class="pill">CasADi</span>
+                  <span class="pill">Nonlinear Optimization</span>
+                  <span class="pill">MPC</span>
+                  <span class="pill">RL (optional)</span>
+                  <span class="pill">Simulation</span>
                 </div>
               </div>
             </div>
 
-
             <div class="card-body">
               <ul>
-                <li><strong>Embedded Engineer Intern @ Savonia UAS (Jan–May 2024)</strong> — built a hospital digital-twin simulator combining ESP32/ESP8266 sensors, Azure cloud and Unity3D to visualise patient flow and equipment status.</li>
-                
+                <li>Built a simulation-first development workflow for a nonlinear excavator to support model-based controllers and, optionally, learning-based controllers.</li>
+                <li>Formulated MPC using CasADi and nonlinear optimization; developed a motion/trajectory task pipeline for evaluation.</li>
+                <li>Focused on reusable training/simulation setup, visualization, and experiment analysis.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Internships -->
+          <article class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Internships in Finland — Digital Twin, Care Robot & Go2 Research</h2>
+                <div class="card-tagline">Savonia UAS · Thinking Lifeline · University of Turku</div>
+                <div class="pill-row">
+                  <span class="pill">ESP8266 / ESP32</span>
+                  <span class="pill">Azure · Unity3D</span>
+                  <span class="pill">Intel RealSense</span>
+                  <span class="pill">RPlidar A1</span>
+                  <span class="pill">ORB-SLAM3 / RTAB-Map</span>
+                  <span class="pill">ROS2 Navigation2</span>
+                  <span class="pill">YOLOv8</span>
+                  <span class="pill">Unitree Go2</span>
+                  <span class="pill">RL Navigation</span>
+                </div>
+              </div>
+            </div>
+
             <div class="video-wrapper">
               <iframe
                 src="https://www.youtube.com/embed/Dc7NZb7aukk"
@@ -431,8 +409,12 @@
                 allowfullscreen
               ></iframe>
             </div>
-                <li><strong>Embedded Software Engineer Intern @ Thinking Lifeline (May–Sep 2024)</strong> — developed a care robot on an iRobot base with RealSense + RPlidar, integrating ORB-SLAM3/RTAB-Map with ROS2 Navigation2 and YOLOv8 for human distance detection and sound-based navigation.</li>
-                <li><strong>Robotics Developer Intern @ University of Turku (May–Aug 2025)</strong> — continued work on autonomous navigation and perception for the Unitree Go2 robot in a research setting, preparing a paper (to be published).</li>
+
+            <div class="card-body">
+              <ul>
+                <li><strong>Embedded/IoT Engineer Intern @ Savonia UAS (Jan–May 2024)</strong> — contributed to a hospital digital twin project by developing a small simulator and integrating ESP8266/ESP32 sensors, Azure cloud services, and Unity3D visualization for patient flow and equipment status.</li>
+                <li><strong>Embedded Software Engineer Intern @ Thinking Lifeline (May–Sep 2024)</strong> — developed a care robot (iRobot-based) with RealSense + RPlidar; integrated ORB-SLAM3/RTAB-Map with ROS2 Navigation2; implemented YOLOv8-based human distance detection and experimented with sound-based navigation.</li>
+                <li><strong>Robotics Developer Intern @ University of Turku (May–Aug 2025)</strong> — trained a dual RL navigation pipeline for Unitree Go2, focusing on perception-driven obstacle-avoiding navigation; manuscript in preparation.</li>
               </ul>
             </div>
           </article>
@@ -442,9 +424,7 @@
             <div class="card-header">
               <div>
                 <h2 class="card-title">IoT Room Air Temperature & Humidity Monitor</h2>
-                <div class="card-tagline">
-                  ESP8266 sensors · Cloud DB · Docker · React dashboard
-                </div>
+                <div class="card-tagline">ESP8266 sensors · Cloud DB · Docker · React dashboard</div>
                 <div class="pill-row">
                   <span class="pill">IoT</span>
                   <span class="pill">ESP8266</span>
@@ -471,14 +451,12 @@
             </div>
           </article>
 
-          <!-- GPS / lidar / odometry robot -->
+          <!-- GPS/LiDAR/Odometry fusion -->
           <article class="card">
             <div class="card-header">
               <div>
                 <h2 class="card-title">Custom Mobile Robot with GPS, LiDAR & Odometry Fusion</h2>
-                <div class="card-tagline">
-                  Course project — sensor fusion for outdoor navigation
-                </div>
+                <div class="card-tagline">Course project — sensor fusion for outdoor navigation</div>
                 <div class="pill-row">
                   <span class="pill">GPS</span>
                   <span class="pill">LiDAR</span>
@@ -491,7 +469,7 @@
             <div class="video-wrapper">
               <iframe
                 src="https://www.youtube.com/embed/yrW31CblupQ"
-                title="Customer robot project with GPS, LiDAR and odometry"
+                title="Custom robot project with GPS, LiDAR and odometry"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
@@ -499,65 +477,53 @@
 
             <div class="card-body">
               <ul>
-                <li>Built a practical robot project that integrates <strong>lidar data, wheel odometry and GPS</strong> for navigation.</li>
-                <li>Implemented data fusion and experimented with outdoor motion and localisation.</li>
+                <li>Built a practical robot project integrating <strong>LiDAR data, wheel odometry, and GPS</strong> for outdoor navigation.</li>
+                <li>Implemented data fusion and tested localisation during outdoor motion experiments.</li>
               </ul>
             </div>
           </article>
         </section>
 
-        <!-- 右侧：工作经历、证书、活动 -->
+        <!-- RIGHT -->
         <section>
           <div class="section-title">Experience</div>
 
           <div class="small-card">
             <h3>C++ / Qt Engineer — Xi’an, China</h3>
-            <div class="meta">2017 – 2022 · Intelligent Security · Navigation Simulators · Radar & Traffic</div>
-            <p>
-              <strong>(Mar 2017 – Sep 2019)</strong> Worked on a large-scale C++/Qt desktop application for
-              <strong>intelligent security monitoring</strong> (face and vehicle analysis) used by hospitals and other
-              institutions, with deployments in China and Brazil. I focused on the vehicle detection module, which built
-              my first solid understanding of software engineering.
-            </p>
-            <p>
-              <strong>(Sep 2019 – Sep 2020)</strong> At Rayco Electronic Information Technology, maintained several
-              control and display applications that transmitted satellite signals from FPGA-based simulators, stored
-              data in databases and visualised it in real-time diagrams on Windows using C++ for high-performance IO.
-            </p>
-            <p>
-              <strong>(Nov 2020 – Sep 2022)</strong> Developed an <strong>urban road traffic monitoring system</strong>
-              that integrated radar and vehicle traffic data, often on NVIDIA Jetson boards. Worked closely with
-              university professors from Xidian University and Shaanxi University of Science & Technology on algorithms
-              and real-time data streams, which strengthened my collaboration skills.
-            </p>
+            <div class="meta">2017 – 2022 · Intelligent Security · Satellite Signals · Radar & Traffic</div>
+
+            <p><strong>ChinaSoft International (Mar 2017 – Sep 2019)</strong> — Large-scale C++/Qt desktop application for intelligent security monitoring (face & vehicle analysis). Focus: vehicle analytics module, API/data integration, protocol analysis, and feature migration from legacy web to Qt client. Practiced structured engineering workflows: code reviews, task tracking, and cross-team delivery.</p>
+
+            <p><strong>Rayco Electronic Information Technology (Sep 2019 – Oct 2020)</strong> — Windows C++ applications for transmitting/receiving satellite signals generated by FPGA-based simulators; database storage and real-time visualization with high throughput requirements.</p>
+
+            <p><strong>Xi’an Hengsheng Anxin (Nov 2020 – Sep 2022)</strong> — Urban traffic monitoring system combining vehicle traffic flow data with radar data; edge deployment on NVIDIA Jetson; TCP data exchange protocol, stream processing, Qt visualization UI, and device calibration via graphical vehicle simulation scenes.</p>
+
             <p class="meta">Demo video:</p>
 
-<div class="video">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/B7Z8EBj9Y_Q"
-    title="Urban traffic & radar monitoring system"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    loading="lazy"
-  ></iframe>
-</div>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/B7Z8EBj9Y_Q"
+                title="Urban traffic & radar monitoring system"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
 
-<p>
-  <a href="https://youtu.be/B7Z8EBj9Y_Q" target="_blank" rel="noreferrer">
-    ▶ Open on YouTube
-  </a>
-</p>
-
+            <p style="margin-top:10px;">
+              <a class="btn" style="padding:6px 12px; font-size:12px;" href="https://youtu.be/B7Z8EBj9Y_Q" target="_blank" rel="noreferrer">
+                ▶ Open on YouTube
+              </a>
+            </p>
           </div>
 
-          <div class="small-card">
+          <div class="small-card" style="margin-top:18px;">
             <h3>Robotics & Embedded Internships — Finland</h3>
             <div class="meta">2024 – 2025 · Savonia UAS · Thinking Lifeline · University of Turku</div>
             <p>
-              Moved into robotics and embedded systems through three internships covering <strong>digital twins, care robots
-              and quadruped research</strong>, as summarised in the video on the left. Work involved ESP32/ESP8266 sensors,
-              Azure & Unity3D visualisation, RealSense & RPlidar based navigation, YOLOv8 perception and autonomous Go2 navigation.
+              Moved into robotics and embedded systems through three internships covering <strong>hospital digital twins</strong>,
+              <strong>care-robot navigation</strong>, and <strong>quadruped research</strong>. Work included ESP32/ESP8266 sensing,
+              Azure & Unity3D visualization, RealSense/RPlidar-based SLAM + ROS2 Navigation2, YOLOv8 perception, and RL navigation for Unitree Go2.
             </p>
           </div>
 
@@ -567,62 +533,63 @@
             <div class="meta">Cloud · DevOps · Project Management</div>
 
             <div style="margin-top:10px; display:grid; gap:10px;">
-  <figure style="margin:0;">
-    <img
-      src="img/Docker.jpg"
-      alt="Docker Foundations Professional Certificate"
-      style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
-    />
-    <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
-      Docker Foundations Professional Certificate (LinkedIn Learning & Docker)
-    </figcaption>
-  </figure>
+              <figure style="margin:0;">
+                <img
+                  src="img/Docker.jpg"
+                  alt="Docker Foundations Professional Certificate"
+                  style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
+                />
+                <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
+                  Docker Foundations Professional Certificate (LinkedIn Learning & Docker)
+                </figcaption>
+              </figure>
 
-  <figure style="margin:0;">
-    <img
-      src="img/AI_Azure.jpg"
-      alt="Microsoft Azure AI Essentials Professional Certificate"
-      style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
-    />
-    <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
-      Microsoft Azure AI Essentials Professional Certificate (Microsoft & LinkedIn)
-    </figcaption>
-  </figure>
+              <figure style="margin:0;">
+                <img
+                  src="img/AI_Azure.jpg"
+                  alt="Microsoft Azure AI Essentials Professional Certificate"
+                  style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
+                />
+                <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
+                  Microsoft Azure AI Essentials Professional Certificate (Microsoft & LinkedIn)
+                </figcaption>
+              </figure>
 
-  <figure style="margin:0;">
-    <img
-      src="img/ProjectMgmt.jpg"
-      alt="Foundation Certificate in Project Management"
-      style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
-    />
-    <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
-      Foundation Certificate in Project Management (PRY · Finland)
-    </figcaption>
-  </figure>
-</div>
+              <figure style="margin:0;">
+                <img
+                  src="img/ProjectMgmt.jpg"
+                  alt="Foundation Certificate in Project Management"
+                  style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
+                />
+                <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
+                  Foundation Certificate in Project Management (PRY · Finland)
+                </figcaption>
+              </figure>
+            </div>
+          </div>
 
+          <div class="section-title">Activities</div>
+          <div class="small-card">
+            <h3>Nokia · Elisa · Microsoft Kuopio Student Network Challenge 2024</h3>
+            <div class="meta">Savonia University of Applied Sciences</div>
+            <p>
+              Participated in the Kuopio Student Network Challenge 2024 organised by Nokia, Elisa and Microsoft,
+              gaining experience in industry-oriented teamwork and presenting technical ideas.
+            </p>
 
-<div class="section-title">Activities</div>
-<div class="small-card">
-  <h3>Nokia · Elisa · Microsoft Kuopio Student Network Challenge 2024</h3>
-  <div class="meta">Savonia University of Applied Sciences</div>
-  <p>
-    Participated in the Kuopio Student Network Challenge 2024 organised by Nokia, Elisa and Microsoft, gaining
-    experience in industry-oriented teamwork and presenting technical ideas.
-  </p>
-
-  <figure style="margin:10px 0 0;">
-    <img
-      src="img/Nokia_event.jpg"
-      alt="Nokia · Elisa · Microsoft Kuopio Student Network Challenge 2024"
-      style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
-    />
-    <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
-      Nokia · Elisa · Microsoft Kuopio Student Network Challenge 2024 at Savonia UAS
-    </figcaption>
-  </figure>
-</div>
-
+            <figure style="margin:10px 0 0;">
+              <img
+                src="img/Nokia_event.jpg"
+                alt="Nokia · Elisa · Microsoft Kuopio Student Network Challenge 2024"
+                style="width:100%; border-radius:12px; border:1px solid rgba(148,163,184,0.6);"
+              />
+              <figcaption style="font-size:11px; margin-top:4px; color:var(--muted);">
+                Nokia · Elisa · Microsoft Kuopio Student Network Challenge 2024 at Savonia UAS
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
 
       <footer>
         <div>© <span id="year"></span> Jiancai Hou · Robotics & Embedded Systems</div>
